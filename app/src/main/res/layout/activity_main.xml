@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.android.comicstore.MainActivity">
+
+    <TextView
+        android:id="@+id/txtcomics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#FFFFFF"
+        android:text="COMICS" />
+
+    <ImageView
+        android:id="@+id/store"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/txtcomics"
+        android:src="@drawable/comicstore" />
+
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Contacts"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@id/store"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon_address"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/contacts"
+        android:src="@drawable/address"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/contact_call"
+        android:layout_below="@id/icon_address"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/email2"
+        android:layout_below="@id/call"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25th Street Park"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="20dp"
+        android:paddingBottom="7.20dp"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/icon_address"
+        android:layout_toRightOf="@+id/icon_address"
+        android:layout_toEndOf="@+id/icon_address"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 55 (11) 97346-1010"
+        android:layout_toRightOf="@id/call"
+        android:layout_alignBottom="@id/call"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:paddingBottom="7.20dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ifgandrade@gmail.com"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_alignBottom="@id/email"
+        android:layout_toRightOf="@id/email"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="7.20dp"
+        />
+
+
+
+
+</RelativeLayout>
